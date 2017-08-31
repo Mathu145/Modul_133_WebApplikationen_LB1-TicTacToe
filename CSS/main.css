@@ -5,12 +5,12 @@ body {
     text-align: center;
 }
 
-#container {
-    margin: 0 auto;
-    width: 100%;
+#nav {
+    margin-bottom: 10%;
+    font-size: 3em;
 }
 
-#all {
+#field {
     display: inline-flex;
 }
 
@@ -34,4 +34,9 @@ body {
     margin: 6px 10px 20px 16px;
     border: 16px black solid;
     cursor: pointer;
+}
+
+.box:hover {
+    background-color: black;
+    border: 16px hsla(213, 100%, 50%, 1) solid;
 }
