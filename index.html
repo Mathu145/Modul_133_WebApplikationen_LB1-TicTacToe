@@ -1,17 +1,29 @@
 <html>
 
 <head>
-    <title>TIC TAC TOE</title>
+    <title>TIC TAC TOE - von Mathusan Aiyadurai Iyer</title>
     <script language="javascript" type="text/javascript" src="JS/main.js"></script>
     <meta charset="utf-8" />
-    <!--link rel="shortcut icon" type="images/Bern%20Kreis.png" href="images/Bern%20Kreis.png" /-->
+    <link rel="shortcut icon" type="Trolls von Mathu" href="http://www.wrangplonet.net/wp-content/uploads/2013/02/trollface.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/main.css" />
+
 </head>
 
 <body>
     <nav id="nav">Tic-Tac-Toe</nav>
-    
+    <form action="/action_page.php">
+        <input type="radio" name="HUMAN vs. HUMAN" value="HUMAN">HUMAN vs. HUMAN<br />
+        <b>Your Mail Adress: </b><input type="text" name="lastname"> <br />
+        <b>Your Mail Adress: </b><input type="text" name="lastname"> <br />
+        <hr />
+        <input type="radio" name="HUMAN vs. PC" value="HUMANPC" checked>HUMAN vs. PC<br />
+        <b>Your Mail Adress: </b><input type="text" name="lastname"><br />
+        <hr />
+        <input type="radio" name="PC vs. PC" value="PC">PC vs. PC<br />
+
+        <div><button class="button" onclick="alert('Mach das Projekt fertig bevor du Start ganz zyt drücksch!')">Start</button> <button class="button">Reset</button></div>
+    </form>
     <div id="field">
         <div id="right">
             <div class="box" id="a1"></div>
@@ -29,9 +41,6 @@
             <div class="box" id="c3"></div>
         </div>
     </div>
-
-    <div><button class="button" onclick="alert('Mach das Projekt fertig bevor du Start ganz zyt drücksch!')">Start</button> <button class="button">Reset</button></div>
-    <!--button class="button"><span>Hover </span></button-->
 </body>
 
 </html>

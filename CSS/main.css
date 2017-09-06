@@ -3,10 +3,11 @@ body {
     font-family: Helvetica;
     font-weight: bold;
     text-align: center;
+    background-color: hsla(213, 100%, 50%, 0.05);
 }
 
 #nav {
-    margin-bottom: 10%;
+    margin-bottom: 1em;
     font-size: 3em;
 }
 
@@ -53,6 +54,7 @@ body {
     transition: all 1s;
     cursor: pointer;
     margin: 25px 10px 0px 10px;
+    margin-bottom: 1em;
 }
 
 .button:hover {
