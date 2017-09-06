@@ -1,6 +1,9 @@
 body {
     margin-top: 40px;
-    font-family: Helvetica;
+    /*font-family: 'Press Start 2P';
+    font-family: 'Oranienbaum', serif;*/
+    font-size: 1.5em;
+    font-family: 'Black Ops One', cursive;
     font-weight: bold;
     text-align: center;
     background-color: hsla(213, 100%, 50%, 0.05);
@@ -48,9 +51,10 @@ body {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 14px;
-    padding: 10px;
-    width: 100px;
+    font-size: 1.5em;
+    font-family: 'Black Ops One', cursive;
+    padding: 15px;
+    width: 22%;
     transition: all 1s;
     cursor: pointer;
     margin: 25px 10px 0px 10px;
@@ -60,6 +64,11 @@ body {
 .button:hover {
     background-color: black;
     color: hsla(213, 100%, 50%, 1);
+}
+
+h1 {
+    font-family: 'Press Start 2P';
+    font-size: 4em;
 }
 
 
