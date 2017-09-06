@@ -67,9 +67,9 @@ h1 {
 }
 
 hr {
-    width: 50%;
+    width: 60%;
     border-top: 9px solid hsla(213, 100%, 50%, 1);
-    border-radius: 100%;
+    border-radius: 40%;
 }
 
 p {
