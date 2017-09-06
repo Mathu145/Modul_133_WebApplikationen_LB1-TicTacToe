@@ -33,10 +33,42 @@ body {
     padding: 10px;
     margin: 6px 10px 20px 16px;
     border: 16px black solid;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .box:hover {
-    background-color: black;
-    border: 16px hsla(213, 100%, 50%, 1) solid;
+    background-color: red;
 }
+
+.button {
+    border-radius: 10px;
+    background-color: hsla(213, 100%, 50%, 1);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 25px 10px 0px 10px;
+}
+
+.button:hover {
+    background-color: black;
+    color: hsla(213, 100%, 50%, 1);
+}
+
+
+/*There is the Mediaqueries for Fulscreens, Tablet, and Smartphones*/
+
+@media screen and (max-width: 1680px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 736px) {}
+
+@media screen and (max-width: 480px) {}
