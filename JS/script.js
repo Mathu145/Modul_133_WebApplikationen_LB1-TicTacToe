@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $("#field").hide();
+
     function validMail() {
         var mail = document.forms["myForms"]["email"].value;
         var atkey = mail.indexOf("@");
@@ -9,17 +11,18 @@ $(document).ready(function () {
             return false;
         }
     }
-//
-//    function check(radioButton) {
-//        document.getElementById("hiddenText").value = radioButton;
-//    }
-//
-//    function hidden(radioButton) {
-//        document.getElementById("hiddenText").value = radioButton;
-//    }
+    //
+    //    function check(radioButton) {
+    //        document.getElementById("hiddenText").value = radioButton;
+    //    }
+    //
+    //    function hidden(radioButton) {
+    //        document.getElementById("hiddenText").value = radioButton;
+    //    }
 
     $("#start").click(function () {
-        $("#form").hide(1000);
+        $("#form").hide();
+        $("p").hide();
         $("#field").show();
     });
 
