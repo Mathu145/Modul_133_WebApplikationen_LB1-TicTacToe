@@ -2,12 +2,12 @@
 
 <head>
     <title>TIC TAC TOE - von Mathusan Aiyadurai Iyer</title>
-    <script language="javascript" type="text/javascript" src="JS/main.js"></script>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="Trolls von Mathu" href="http://www.wrangplonet.net/wp-content/uploads/2013/02/trollface.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="CSS/main.css" />
+    <script language="javascript" type="text/javascript" src="JS/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Oranienbaum|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css" />
 
 
 </head>
@@ -17,18 +17,15 @@
     <h1>Tic-Tac-Toe</h1>
     <p>Let's play a game, choose how you want to play and click on start!<br /> Have fun!<br /> - Mathusan Aiyadurai Iyer</p>
     <hr />
-    <form>
-        <input type="radio" name="HUMAN vs. HUMAN" value="HUMAN"> HUMAN vs. HUMAN<br />
-        <b>Your Mail Adress: </b><input type="text" name="lastname"> <br />
-        <b>Your Mail Adress: </b><input type="text" name="lastname"> <br />
+    <form name="myForms">
+        <input type="radio" name="radioButton" value="HUMAN"> HUMAN vs. HUMAN<br />
+        <b>Your Mail Adress: </b><input type="text" name="email"> <br />
+        <b>Your Mail Adress: </b><input type="text" name="email"> <br />
         <hr />
-        <input type="radio" name="HUMAN vs. PC" value="HUMANPC" checked> HUMAN vs. PC<br />
-        <b>Your Mail Adress: </b><input type="text" name="lastname"><br />
+        <input type="radio" name="radioButton" value="HUMANPC" checked> HUMAN vs. PC<br />
+        <b>Your Mail Adress: </b><input type="text" name="email"><br />
         <hr />
-        <input type="radio" name="PC vs. PC" value="PC"> PC vs. PC<br />
-
-        <div><button id="start" class="button" onclick="alert('Mach das Projekt fertig bevor du Start ganz zyt drücksch!')">Start</button> <button id="reload" class="button">Reset</button></div>
-         &nbsp;Turn: <span id='turns'></span> 
+        <input type="radio" name="radioButton" value="PC"> PC vs. PC<br />
     </form>
     <div id="field">
         <div id="right">
@@ -47,6 +44,7 @@
             <div class="box" id="c3"></div>
         </div>
     </div>
+    <div><button id="start" class="button" onclick="myFunction()">Start</button> <button id="reload" class="button">Reset</button></div>
 </body>
 
 </html>

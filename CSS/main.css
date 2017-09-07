@@ -11,6 +11,7 @@ body {
 
 #field {
     display: inline-flex;
+    visibility: hidden;
 }
 
 #right {
@@ -76,7 +77,6 @@ p {
     font-family: 'Oranienbaum';
     font-size: 1em;
 }
-
 
 
 /*There is the Mediaqueries for Fulscreens, Tablet, and Smartphones*/
