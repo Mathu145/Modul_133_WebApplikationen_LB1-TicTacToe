@@ -9,24 +9,18 @@ $(document).ready(function () {
             return false;
         }
     }
+//
+//    function check(radioButton) {
+//        document.getElementById("hiddenText").value = radioButton;
+//    }
+//
+//    function hidden(radioButton) {
+//        document.getElementById("hiddenText").value = radioButton;
+//    }
 
-    function check(radioButton) {
-        document.getElementById("hiddenText").value = radioButton;
-    }
+    $("#start").click(function () {
+        $("#form").hide(1000);
+        $("#field").show();
+    });
 
-    function hidden(radioButton) {
-        document.getElementById("hiddenText").value = radioButton;
-    }
-
-    function myFunction() {
-        var x = document.getElementById('field');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    
-    $("").click(function()
-
-}); // end document ready
+});
