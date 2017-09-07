@@ -80,13 +80,85 @@ p {
 
 /*There is the Mediaqueries for Fulscreens, Tablet, and Smartphones*/
 
-@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 1680px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width: 736px) {}
+@media screen and (max-width: 736px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 480px) {
     body {
