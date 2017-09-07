@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#field").hide();
+    $("#2nd").hide();
 
     function validMail() {
         var mail = document.forms["myForms"]["email"].value;
@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("#start").click(function () {
         $("#form").hide();
         $("p").hide();
-        $("#field").show();
+        $("#2nd").show();
 
     });
 
