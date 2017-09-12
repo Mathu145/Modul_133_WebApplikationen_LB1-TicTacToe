@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $("#2nd").hide();
+    $("#reload").hide();
 
     function validMail() {
         var mail = document.forms["myForms"]["email"].value;
@@ -10,17 +11,34 @@ $(document).ready(function () {
             alert("Not a valid e-mail address");
             return false;
         }
-    }
+    };
 
-    $("#start").click(function () {
-        $("#form").hide();
+    $("#start").on("click", function () {
         $("p").hide();
+        $("form").hide();
+        $("#start").hide();
         $("#2nd").show();
+        $("#reload").show();
 
     });
+    
+    var spiel = "0";
 
-    $('#reload').click(function () {
+    $(".box").one("click", function () {
+
+        $(this).html(spiel);
+        if (spiel == "X") {
+            spiel = "0"
+        } else {
+            spiel = "X"
+        }
+    });
+
+
+    $("#reload").on("click", function () {
+        //$(".box").html("");
         location.reload();
+        
     });
 
 });

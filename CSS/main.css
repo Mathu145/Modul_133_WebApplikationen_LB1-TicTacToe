@@ -40,25 +40,28 @@ body {
     background-color: red;
 }
 
+.square {
+    font-size: 12em
+}
+
 .button {
     border-radius: 10px;
     background-color: hsla(213, 100%, 50%, 1);
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-family: 'Black Ops One';
     padding: 15px;
-    width: 22%;
-    transition: all 1s;
+    width: 40%;
+    transition: all 0.25s;
     cursor: pointer;
     margin: 25px 10px 0px 10px;
     margin-bottom: 1em;
 }
 
 .button:hover {
-    background-color: black;
-    color: hsla(213, 100%, 50%, 1);
+    background-color: hsl(0, 100%, 50%);
 }
 
 h1 {
