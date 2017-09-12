@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
     $("#reload").on("click", function () {
-        //$(".box").html("");
+        //$(".box").htbml("");
         location.reload();
         
     });
