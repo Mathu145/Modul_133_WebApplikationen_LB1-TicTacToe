@@ -21,24 +21,26 @@ $(document).ready(function () {
         $("#reload").show();
 
     });
-    
-    var spiel = "0";
+
+    var spiel = '<div class="XO">O</div>';
 
     $(".box").one("click", function () {
 
         $(this).html(spiel);
-        if (spiel == "X") {
-            spiel = "0"
+        if (spiel == '<div class="XO">X</div>') {
+            spiel = '<div class="XO">O</div>'
         } else {
-            spiel = "X"
+            spiel = '<div class="XO">X</div>'
         }
     });
 
 
     $("#reload").on("click", function () {
         //$(".box").htbml("");
-        location.reload();
-        
+        //location.reload();
+        $(".XO").removeClass();
+        $
+
     });
 
 });

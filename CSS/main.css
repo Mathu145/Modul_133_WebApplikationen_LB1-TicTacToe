@@ -64,6 +64,12 @@ body {
     background-color: hsl(0, 100%, 50%);
 }
 
+.XO {
+    font-size: 5em;
+    text-align: center;
+    margin: 23px 0px 0px 0px;
+}
+
 h1 {
     font-family: 'Press Start 2P';
     font-size: 4em;
