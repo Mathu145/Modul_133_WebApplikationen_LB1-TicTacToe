@@ -40,25 +40,34 @@ body {
     background-color: red;
 }
 
+.square {
+    font-size: 12em
+}
+
 .button {
     border-radius: 10px;
     background-color: hsla(213, 100%, 50%, 1);
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-family: 'Black Ops One';
     padding: 15px;
-    width: 22%;
-    transition: all 1s;
+    width: 40%;
+    transition: all 0.25s;
     cursor: pointer;
     margin: 25px 10px 0px 10px;
     margin-bottom: 1em;
 }
 
 .button:hover {
-    background-color: black;
-    color: hsla(213, 100%, 50%, 1);
+    background-color: hsl(0, 100%, 50%);
+}
+
+.XO {
+    font-size: 5em;
+    text-align: center;
+    margin: 23px 0px 0px 0px;
 }
 
 h1 {
@@ -80,12 +89,122 @@ p {
 
 /*There is the Mediaqueries for Fulscreens, Tablet, and Smartphones*/
 
-@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 1680px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+    .XO {
+        font-size: 2em;
+        margin: 0px 0px 0px 0px;
+    }
+}
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+    .XO {
+        font-size: 2em;
+        margin: 0px 0px 0px 0px;
+    }
+}
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+    .XO {
+        font-size: 2em;
+        margin: 0px 0px 0px 0px;
+    }
+}
 
-@media screen and (max-width: 736px) {}
+@media screen and (max-width: 736px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+    .XO {
+        font-size: 2em;
+        margin: 0px 0px 0px 0px;
+    }
+}
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1em;
+    }
+    .box {
+        width: 2em;
+        height: 2em;
+    }
+    .button {
+        font-size: 100%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    hr {
+        width: 90%;
+    }
+    .XO {
+        font-size: 2em;
+        margin: 0px 0px 0px 0px;
+    }
+}
