@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     $("#reload").on("click", function () {
         $(".box").html("");
-        //location.reload();
+        location.reload();
         //$(".XO").removeClass();
         $
 
