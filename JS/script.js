@@ -36,9 +36,9 @@ $(document).ready(function () {
 
 
     $("#reload").on("click", function () {
-        //$(".box").htbml("");
+        $(".box").html("");
         //location.reload();
-        $(".XO").removeClass();
+        //$(".XO").removeClass();
         $
 
     });
