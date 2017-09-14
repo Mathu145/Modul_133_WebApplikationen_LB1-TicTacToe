@@ -27,8 +27,8 @@ body {
 
 .box {
     background-color: hsla(213, 100%, 50%, 1);
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
     padding: 10px;
     margin: 6px 10px 20px 16px;
     border: 16px black solid;
