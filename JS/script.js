@@ -1,45 +1,69 @@
 $(document).ready(function () {
-
     $("#2nd").hide();
     $("#reload").hide();
+    $("#first").hide();
 
     function validMail() {
-        var mail = document.forms["myForms"]["email"].value;
-        var atkey = mail.indexOf("@");
-        var dotpos = mail.lastIndexOf(".");
-        if (atkey < 1 || dotpos < atkey + 2 || dotpos + 2 >= mail.length) {
-            alert("Not a valid e-mail address");
-            return false;
+        var check = true;
+        var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var checkedRadio = $("#formular").find("input:checked")[0].value;
+        if (checkedRadio == "HUMAN") {
+            if ($("#P1").val() == $("#P2").val()) {
+                alert("You can't you this Mail Address twice time!");
+                check = false;
+            }
+            if (!(reg.test($("#P1").val()))) {
+                alert("isnt corectly for player 1 pls retyype");
+                check = false;
+            }
+            if (!(reg.test($("#P2").val()))) {
+                alert("isnt corectly for player 2 pls retyype");
+                check = false;
+            }
         }
+
+        if (checkedRadio == "HUMANPC") {
+            if (!(reg.test($("#P3").val()))) {
+                alert("Mail not correct");
+                check = false;
+            }
+        }
+
+        return check
     };
 
     $("#start").on("click", function () {
-        $("p").hide();
-        $("form").hide();
-        $("#start").hide();
-        $("#2nd").show();
-        $("#reload").show();
-
-    });
-
-    var spiel = '<div class="XO">O</div>';
-
-    $(".box").one("click", function () {
-
-        $(this).html(spiel);
-        if (spiel == '<div class="XO">X</div>') {
-            spiel = '<div class="XO">O</div>'
-        } else {
-            spiel = '<div class="XO">X</div>'
+        if (validMail()) {
+            $("p").hide();
+            $("#formular").hide();
+            $("#start").hide();
+            $("hr").hide();
+            $("#2nd").show();
+            $("#reload").show();
+            $("#first").show();
         }
     });
 
 
-    $("#reload").on("click", function () {
+    var spiel = '<div class="XO">O</div>';
+
+    $(".box").on("click", function () {
+        if (!($(this).children().hasClass("XO"))) {
+            $(this).html(spiel);
+            if (spiel == '<div class="XO">X</div>') {
+                spiel = '<div class="XO">O</div>'
+            } else {
+                spiel = '<div class="XO">X</div>'
+            }
+        }
+
+    });
+
+
+
+    $("#reload").click(function () {
         $(".box").html("");
-        location.reload();
-        //$(".XO").removeClass();
-        $
+        $(".XO").removeClass();
 
     });
 
