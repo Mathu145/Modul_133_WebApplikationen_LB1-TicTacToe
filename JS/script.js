@@ -45,15 +45,15 @@ $(document).ready(function () {
     });
 
 
-    var spiel = '<div class="XO">O</div>';
+    var spiel = '<div class="XO" id="O">O</div>';
 
     $(".box").on("click", function () {
         if (!($(this).children().hasClass("XO"))) {
             $(this).html(spiel);
-            if (spiel == '<div class="XO">X</div>') {
-                spiel = '<div class="XO">O</div>'
+            if (spiel == '<div class="XO" id="X">X</div>') {
+                spiel = '<div class="XO" id="O" >O</div>'
             } else {
-                spiel = '<div class="XO">X</div>'
+                spiel = '<div class="XO" id="X">X</div>'
             }
         }
 
