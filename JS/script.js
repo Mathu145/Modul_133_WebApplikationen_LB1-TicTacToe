@@ -60,10 +60,24 @@
     });
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $("#reload").on("click", function () {
+        //$(".box").html("");
+        //location.reload();
+        //$(".XO").removeClass();
+        $("#a1").removeClass("XO");
+=======
+=======
+>>>>>>> e51bda8ec1befadae1586020d931466e3772faac
 
     $("#reload").click(function () {
         $(".box").html("");
         $(".XO").removeClass();
+<<<<<<< HEAD
+>>>>>>> e51bda8ec1befadae1586020d931466e3772faac
+=======
+>>>>>>> e51bda8ec1befadae1586020d931466e3772faac
 
     });
 
