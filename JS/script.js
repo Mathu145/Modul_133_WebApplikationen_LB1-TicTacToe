@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/**/$(document).ready(function () {
     $("#2nd").hide();
     $("#reload").hide();
     $("#firstLine").hide();
