@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,24 +18,24 @@
 <body>
     <nav></nav>
     <h1>Tic-Tac-Toe</h1>
+    <hr id="first" />
     <p>Let's play a game, choose how you want to play and click on start!<br /> Have fun!<br /> - Mathusan Aiyadurai Iyer</p>
     <hr />
-    <div id="form">
+    <div id="formular">
         <form name="myForms">
-            <input type="radio" name="radioButton" value="HUMAN"> HUMAN vs. HUMAN<br />
-            <b>Your Mail Adress: </b><input type="text" name="email"> <br />
-            <b>Your Mail Adress: </b><input type="text" name="email"> <br />
+            <input type="radio" name="radioButton" value="HUMAN" checked> HUMAN vs. HUMAN<br />
+            <b>Your Mail Adress: </b><input type="text" name="email" placeholder="Type your Mail here!" id="P1"> <br />
+            <b>Your Mail Adress: </b><input type="text" name="email" placeholder="Type your Mail here!" id="P2"> <br />
             <hr />
-            <input type="radio" name="radioButton" value="HUMANPC" checked> HUMAN vs. PC<br />
-            <b>Your Mail Adress: </b><input type="text" name="email"><br />
+            <input type="radio" name="radioButton" value="HUMANPC"> HUMAN vs. PC<br />
+            <b>Your Mail Adress: </b><input type="text" name="email" placeholder="Type your Mail here!" id="P3"><br />
             <hr />
             <input type="radio" name="radioButton" value="PC"> PC vs. PC<br />
         </form>
         <button id="start" class="button">Start</button>
-        <button id="reload" class="button">Reset</button>
     </div>
     <div id="2nd">
-        
+
         <div id="field">
             <div id="right">
                 <div class="box" id="a1"></div>
@@ -53,6 +54,7 @@
             </div>
         </div>
     </div>
+    <button id="reload" class="button">Reset</button>
 </body>
 
 </html>
