@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#2nd").hide();
     $("#reload").hide();
-    $("#first").hide();
+    $("#firstLine").hide();
 
     function validMail() {
         var check = true;
@@ -40,7 +40,7 @@ $(document).ready(function () {
             $("hr").hide();
             $("#2nd").show();
             $("#reload").show();
-            $("#first").show();
+            $("#firstLine").show();
         }
     });
 
