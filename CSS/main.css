@@ -69,11 +69,11 @@ body {
     text-align: center;
 }
 
-#X{
+#X {
     color: #FFFFFF;
 }
 
-#O{
+#O {
     color: #FFFFFF;
 }
 
@@ -91,6 +91,10 @@ hr {
 p {
     font-family: 'Oranienbaum';
     font-size: 1em;
+}
+
+label {
+    cursor: pointer;
 }
 
 
